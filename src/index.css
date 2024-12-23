@@ -1,0 +1,179 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@tailwind components;
+@tailwind utilities;
+
+
+
+a {
+    text-decoration: none;
+  }
+  
+.navbar {
+    width: 100%;
+    height: 80px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.box-background {
+    position: relative;
+    padding-top: 30px;
+    max-width: 1300px; /* Set maximum width to 1300px */
+    width: 100%;       /* Ensure it adapts for smaller screens */
+    margin: 0 auto;    /* Center the box horizontally */
+      
+}
+
+.profile {
+    width: 50px;
+    height: 50px;
+}
+
+.profile img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    object-fit: cover;
+}
+/* Tabs (Hotel/Tour) */
+.box-button {
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 10px;
+}
+
+.box-button .btn-hotel,
+.box-button .btn-tour {
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.box-button .btn-hotel {
+    border: 1px solid rgb(30, 155, 95);
+}
+
+.box-button .btn-tour {
+    border: none;
+}
+
+.box-button .btn-tour:hover {
+    border: 1px solid rgb(30, 155, 95);
+    transition: 0.4s;
+}
+
+.banner-background{
+    width: 100%;
+    border-radius: 8px;
+    background-color: rgb(240,243,245);
+}
+
+.banner-hotel{
+    width: 1300px;
+    border-radius: 8px;
+    height: 300px;
+    margin: auto;
+}
+
+.Jumbotron-hotel {
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.203);
+    top: 0;
+    border-radius: 8px;
+}
+
+.Jumbotron-tour {
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.311);
+    top: 0;
+    border-radius: 8px;
+}
+
+.Jumbotron-tour {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    /* Adds a transparent overlay for better text readability */
+    padding: 2rem;
+}
+
+.card-img-hotel {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+}
+.card-img-overlay:hover {
+    background-color: rgba(0, 0, 0, 0.146);
+    transition: 0.3s;
+}
+
+
+.card-img-tour {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+}
+.text-container {
+    max-width: 800px;
+    /* Adjusts container for better alignment */
+    margin: 0 auto;
+}
+/* Set fixed width and center the container */
+.custom-container {
+    max-width: 1300px;
+    margin: auto;
+  }
+  
+  /* Responsive adjustments for card images */
+  .card-img-hotel {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+  }
+  /* Limit container width and center it */
+.custom-container {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+  
+  /* Responsive images */
+  .card-img-tour {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  /* Optional: Shadow for better card visuals */
+  .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .text-container {
+    max-width: 800px;
+    /* Adjusts container for better alignment */
+    margin: 0 auto;
+}
+
+.text-color {
+    color: rgb(25,135,84);
+    /* Green highlight color */
+}
+
+/* Add spacing between items for better readability */
+ul.list-unstyled li a {
+    font-size: 1rem;
+    /* Adjust as needed */
+    padding: 5px 10px;
+}
